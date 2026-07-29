@@ -8,20 +8,35 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?v=4">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
 </head>
 <body>
   <header class="site-header">
     <a class="site-title" href="index.html">Teresa Ross Tellechea</a>
-    <nav aria-label="Primary navigation">
-      <a href="index.html">About</a>
-      <a href="projects.html" aria-current="page">Projects</a>
-    </nav>
+    <div class="header-controls">
+      <nav aria-label="Primary navigation">
+        <a href="index.html" data-i18n="navAbout">About</a>
+        <a href="projects.html" aria-current="page" data-i18n="navWork">Selected Work</a>
+      </nav>
+
+      <div class="language-switcher" aria-label="Language">
+        <button type="button" class="language-button is-active" data-language="en"
+                aria-pressed="true">EN</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" class="language-button" data-language="es"
+                aria-pressed="false">ES</button>
+      </div>
+    </div>
   </header>
 
   <main>
     <section class="projects-intro minimal-projects-intro">
-      <h1>Selected Work</h1>
-      <p>Click an image to learn more about the project.</p>
+      <h1 data-i18n="workHeading">Selected Work</h1>
+      <p data-i18n="workInstruction">Select an image to learn more about the project.</p>
       
     </section>
 
@@ -33,10 +48,10 @@
                 aria-label="Still from a Spanish-language Laurel and Hardy short"></span>
           
           <span class="project-description">
-<span class="project-title">Laurel &amp; Hardy</span>
-            <span class="project-meta">Film Forum · 2026</span>
-            <span class="project-role">Spanish → English · Subtitle translation and live soft-titling</span>
-            <span class="project-copy">
+<span class="project-title" data-i18n="lhTitle">Laurel &amp; Hardy</span>
+            <span class="project-meta" data-i18n="lhMeta">Film Forum · 2026</span>
+            <span class="project-role" data-i18n="lhRole">Spanish → English · Subtitle translation and live soft-titling</span>
+            <span class="project-copy" data-i18n="lhCopy">
               Prepared English subtitles for select screenings of rarely shown
               Spanish-language Laurel &amp; Hardy shorts during Film Forum's
               Laurel &amp; Hardy festival. The work included translating dialogue,
@@ -45,8 +60,8 @@
             </span>
             <a class="project-link"
                href="https://filmforum.org/film/politiquerias-laurel-hardy"
-               target="_blank" rel="noopener">Learn more →</a>
-            <span class="project-close">back to image</span>
+               target="_blank" rel="noopener" data-i18n="learnMore">Learn more →</a>
+            <span class="project-close" data-i18n="backToImage">back to image</span>
           </span>
         </button>
       </article>
@@ -57,10 +72,10 @@
                 aria-label="Still from Ann Demeulemeester Spring Summer 2026 behind the scenes film"></span>
           
           <span class="project-description">
-<span class="project-title">Ann Demeulemeester Spring / Summer 2026 BTS</span>
-            <span class="project-meta">Silken Weinberg · 2026 · 8 min</span>
-            <span class="project-role">English subtitles · Translation editing and timing</span>
-            <span class="project-copy">
+<span class="project-title" data-i18n="annTitle">Ann Demeulemeester Spring / Summer 2026 BTS</span>
+            <span class="project-meta" data-i18n="annMeta">Silken Weinberg · 2026 · 8 min</span>
+            <span class="project-role" data-i18n="annRole">English subtitles · Translation editing and timing</span>
+            <span class="project-copy" data-i18n="annCopy">
               Created English captions for a behind-the-scenes film documenting
               the development of a fashion collection. The captions were carefully
               timed and edited to support comprehension while remaining visually
@@ -68,8 +83,8 @@
             </span>
             <a class="project-link"
                href="https://www.youtube.com/watch?v=oNmz93XrPeE&t=122s"
-               target="_blank" rel="noopener">Learn more →</a>
-            <span class="project-close">back to image</span>
+               target="_blank" rel="noopener" data-i18n="learnMore">Learn more →</a>
+            <span class="project-close" data-i18n="backToImage">back to image</span>
           </span>
         </button>
       </article>
@@ -80,10 +95,10 @@
                 aria-label="Still from Outrider"></span>
           
           <span class="project-description">
-<span class="project-title"><em>Outrider</em></span>
-            <span class="project-meta">Alystyre Julian · 2025 · 101 min</span>
-            <span class="project-role">English → Spanish · Subtitle translation and timing</span>
-            <span class="project-copy">
+<span class="project-title"><em data-i18n="outriderTitle">Outrider</em></span>
+            <span class="project-meta" data-i18n="outriderMeta">Alystyre Julian · 2025 · 101 min</span>
+            <span class="project-role" data-i18n="outriderRole">English → Spanish · Subtitle translation and timing</span>
+            <span class="project-copy" data-i18n="outriderCopy">
               Created Spanish subtitles from scratch for an independent feature
               composed largely of spoken-word poetry, including translation,
               timing, line breaks, and quality control. Although an AI-generated
@@ -93,8 +108,8 @@
             </span>
             <a class="project-link"
                href="https://www.outriderfilm.com"
-               target="_blank" rel="noopener">Learn more →</a>
-            <span class="project-close">back to image</span>
+               target="_blank" rel="noopener" data-i18n="learnMore">Learn more →</a>
+            <span class="project-close" data-i18n="backToImage">back to image</span>
           </span>
         </button>
       </article>
@@ -105,10 +120,10 @@
                 aria-label="Still from A Biography of Lilith"></span>
           
           <span class="project-description">
-<span class="project-title"><em>A Biography of Lilith</em></span>
-            <span class="project-meta">Lynne Sachs · 1997 · 35 min</span>
-            <span class="project-role">English → Spanish · Subtitle revision</span>
-            <span class="project-copy">
+<span class="project-title"><em data-i18n="lilithTitle">A Biography of Lilith</em></span>
+            <span class="project-meta" data-i18n="lilithMeta">Lynne Sachs · 1997 · 35 min</span>
+            <span class="project-role" data-i18n="lilithRole">English → Spanish · Subtitle revision</span>
+            <span class="project-copy" data-i18n="lilithCopy">
               Revised and corrected Spanish subtitles for the film's 4K
               restoration, which screened at the Ambulante Documentary Film
               Festival in Mexico City in April 2024. The work involved refining
@@ -118,8 +133,8 @@
             </span>
             <a class="project-link"
                href="http://www.lynnesachs.com/1997/06/15/a-biography-of-lilith/"
-               target="_blank" rel="noopener">Learn more →</a>
-            <span class="project-close">back to image</span>
+               target="_blank" rel="noopener" data-i18n="learnMore">Learn more →</a>
+            <span class="project-close" data-i18n="backToImage">back to image</span>
           </span>
         </button>
       </article>
@@ -128,7 +143,7 @@
   </main>
 
   <footer>
-    <p>English ⇄ Spanish subtitling · New York City</p>
+    <p><span data-i18n="footerService">English ⇄ Spanish subtitling</span> · <span data-i18n="location">New York City</span></p>
   </footer>
 
   <script src="script.js"></script>

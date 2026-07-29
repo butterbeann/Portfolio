@@ -1,12 +1,22 @@
-EDITORIAL FINAL VERSION
+TERESA.FYI — VERSION 1.1 BILINGUAL
 
-Changes:
-- Project descriptions now use a left-aligned editorial layout.
-- IBM Plex Sans added for a more professional, archival feel.
-- Removed project numbers.
-- Shortened Laurel & Hardy title.
-- Standardized project metadata and role formatting.
-- Reduced top spacing above Selected Work.
-- Restored the original softer Laurel & Hardy image.
-- Retained a simple 200 ms dissolve between image and project information.
-- Retained the popcorn cursor.
+Included:
+- EN / ES toggle on About and Selected Work.
+- The visitor's language choice is remembered.
+- English copy preserved.
+- Final Spanish bio with “formas creativas” and “subtitulación en vivo.”
+- Spanish project descriptions use an impersonal editorial style.
+- Current project images, popcorn cursor, favicon files, and CNAME preserved.
+
+TO UPDATE GITHUB
+1. Unzip this folder.
+2. In the Portfolio repository, upload and replace:
+   - index.html
+   - projects.html
+   - style.css
+   - script.js
+3. You may also upload CNAME and the image/favicon files, but they should already match.
+4. Commit the changes.
+5. Wait about one minute, then refresh teresa.fyi.
+
+Do not upload the ZIP itself. Upload the files inside the unzipped folder.
